@@ -1,3 +1,5 @@
+> Forked from [ASHR12/elevenlabs-conversational-ai-agents](https://github.com/ASHR12/elevenlabs-conversational-ai-agents) — added a `.env.example` and gitignored `.env`, because the setup steps said to put the API key in `.env` but `.gitignore` only covered `.env*.local`.
+
 # ElevenLabs Conversational AI Agents
 
 This is a [Next.js](https://nextjs.org/) project that implements a conversational AI Agents using ElevenLabs' SDK. The application features a voice assistant interface that allows users to interact with the AI through voice commands.
@@ -25,10 +27,16 @@ If you enjoy this project and want to support me, consider buying me a coffee or
 
 ## Environment Variables
 
-Make sure to configure the following variables in your `.env` file:
+Copy `.env.example` to `.env.local` and fill in:
 
 - `ELEVEN_LABS_API_KEY`
 - `NEXT_PUBLIC_AGENT_ID`
+
+```bash
+cp .env.example .env.local
+```
+
+Both `.env` and `.env.local` are gitignored, so the key stays out of commits either way.
 
 ## Get Started
 
